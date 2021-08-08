@@ -7,7 +7,7 @@ ENV PORT=8080
 # # HOST FOR CORS 
 # ARG HOST
 
-COPY bin/GraphQL_implementation .
+COPY bin/golang-okta-token-handler .
 
 EXPOSE 8080
 
