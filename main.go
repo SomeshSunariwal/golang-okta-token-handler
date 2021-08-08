@@ -34,5 +34,6 @@ func main() {
 		// AllowMethods: []string{http.MethodGet, http.MethodPut, http.MethodPost, http.MethodDelete},
 	}))
 
+	e.Use(middleware.Logger())
 	e.Logger.Fatal(e.Start(":" + PORT))
 }
