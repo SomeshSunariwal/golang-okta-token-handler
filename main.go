@@ -25,8 +25,16 @@ func main() {
 	})
 	e.GET("/data", Handler.handler.GetData, Handler.tokenHandler.TokenHandler)
 
+	// Testing CORS 
 	HOST := os.Getenv("HOST")
+	if HOST == "" {
+		HOST="http://localhost:8080"
+	}
+
 	PORT := os.Getenv("PORT")
+	if PORT == "" {
+		PORT = "8080"
+	}
 
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
 		AllowOrigins: []string{HOST},
