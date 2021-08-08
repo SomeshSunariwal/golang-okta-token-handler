@@ -28,7 +28,7 @@ func main() {
 	// Testing CORS 
 	HOST := os.Getenv("HOST")
 	if HOST == "" {
-		HOST="http://localhost:8080"
+		HOST="http://localhost:3000"
 	}
 
 	PORT := os.Getenv("PORT")
