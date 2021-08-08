@@ -4,8 +4,8 @@ WORKDIR $GOPATH/src/github.com/SomeshSunariwal/golang-okta-token-handler
 
 ENV PORT=8080
 
-# HOST FOR CORS 
-ENV HOST
+# # HOST FOR CORS 
+# ARG HOST
 
 COPY bin/GraphQL_implementation .
 
